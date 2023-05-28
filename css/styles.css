@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Poppins:ital@0;1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins', sans-serif ;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer"
+}
+
+
+header{
+    grid-area: header;
+    background-color: #A9907E;
+    padding: 5px; 
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+header nav ul li{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown-menu{
+    background-color: #A9907E;
+}
+
+/* termina el header*/
+main{
+    grid-area: main;
+    background-color: #675D50;
+}
+
+main h3{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pdeimg, .tamaño{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-left:25px
+    
+}
+
+
+.pdeimg2, .tamaño2{
+    display: flex;
+    justify-content: left;
+    padding: 50px;
+    margin-left:25px;
+}
+
+.tabla{
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.card{
+    background-color: darkgrey;
+    padding:30px;
+    margin: 30px;
+}
+/*termina el main*/
+
+footer{
+    grid-area: footer;
+    height: 100%;
+    padding: 15px;
+    background-color: #A9907E;
+}
+
+footer h4{
+    padding: 5px;
+}
+footer section a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+@media (min-width:480px) and (max-width:599px) {
+    .pdeimg, .pdeimg2{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media (min-width:480px) and (max-width:599px){
+    .tamaño, .tamaño2, .titulo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width:480px) and (max-width:599px){
+    .iframe{
+        width: 300px;
+    }
+}
